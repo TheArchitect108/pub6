@@ -15,6 +15,10 @@ https://docs.docker.com/develop/develop-images/build_enhancements/
 Windows Users Follow --
 https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly#ensure-volume-mounts-work
 
+### TREs
+
+Place the required TREs in `server/tre`. A list can be found under `server/conf/config.lua`.
+
 ### Git and Docker
 
 `git clone https://github.com/TheArchitect108/swgepub6.git`
@@ -24,10 +28,6 @@ https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-fla
 `docker-compose build` * may take 15-20 mins
 <br/>
 `docker-compose up -d`
-
-### TREs
-
-Place the required TREs in `server/tre`. A list can be found under `server/conf/config.lua`.
 
 ### Database
 
@@ -49,9 +49,9 @@ You can use the following commands to troubleshoot more indepth --
 
 `docker container ls`
 <br/>
-`docker attach container_id`
+`docker attach pub6_server`
 <br/>
-`docker container kill container_id`
+`docker container kill pub6_server`
 
 ## Old Way
 
