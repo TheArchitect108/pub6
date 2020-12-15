@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 volumes:
   mysql:
@@ -20,16 +20,16 @@ services:
       - MYSQL_PASSWORD=swgemu-sql
     volumes:
       - mysql:/var/lib/mysql
-      - ./sql:/docker-entrypoint-initdb.d
+      - ./MMOCoreORB/sql:/docker-entrypoint-initdb.d
     restart: always
 
-  swgemu:
+  pub6:
     depends_on:
       - database
     build: .
-    image: swgemu:dev
-    hostname: swgemu_server
-    container_name: swgemu_server
+    image: pub6:dev
+    hostname: pub6_server
+    container_name: pub6_server
     ports:
       - "44419:44419"
       - "44419:44419/udp"
