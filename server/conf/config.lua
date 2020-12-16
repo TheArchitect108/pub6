@@ -52,7 +52,7 @@ Core3 = {
 	ORB = "",
 	ORBPort = 44419,
 
-	DBHost = "swgemu_database",
+	DBHost = "pub6_database",
 	DBPort = 3306,
 	DBName = "swgemu",
 	DBUser = "swgemu",
@@ -65,7 +65,7 @@ Core3 = {
 	LoginAllowedConnections = 3000,
 	LoginRequiredVersion = "20031217-16:02",
 
-	MantisHost = "swgemu_database",
+	MantisHost = "pub6_database",
 	MantisPort = 3306,
 	MantisName = "swgemu",
 	MantisUser = "swgemu",
