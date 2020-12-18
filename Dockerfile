@@ -1,3 +1,5 @@
+# syntax = docker/dockerfile:experimental
+
 # Create base image with dependencies
 # needed by both builder and final
 FROM ubuntu:16.04 as base-image
@@ -51,7 +53,7 @@ RUN ls && sed -i 's/..\/..\/MMOCoreORB\///' .git/modules/MMOCoreORB/utils/engine
 
 WORKDIR /app/MMOCoreORB
 RUN --mount=type=cache,target=/ccache/ make build-ninja-debug
-# Create final image that could be used as a 
+# Create final image that could be used as a
 # lighter-weight production image
 FROM base-image as final
 
