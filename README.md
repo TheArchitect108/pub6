@@ -15,13 +15,11 @@ https://stackoverflow.com/questions/58592259/how-do-you-enable-buildkit-with-doc
 Windows Users Follow --
 https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly#ensure-volume-mounts-work
 
-### TREs
-
-Place the required TREs in `server/tre`. A list can be found under `server/conf/config.lua`.
-
-### Git and Docker
+### Git, Docker, and TREs
 
 `git clone https://github.com/TheArchitect108/swgepub6.git`
+<br/>
+Place the required TREs in `server/tre`. A list can be found under `server/conf/config.lua`.
 <br/>
 `git submodule update --init --recursive`
 <br/>
