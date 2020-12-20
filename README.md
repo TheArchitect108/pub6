@@ -52,6 +52,8 @@ You can use the following commands to troubleshoot more indepth --
 `docker attach pub6_server`
 <br/>
 `docker container kill pub6_server`
+<br/>
+`docker logs --tail 50 --follow --timestamps pub6_server`
 
 ## Old Way
 
