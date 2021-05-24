@@ -100,8 +100,9 @@ You can use the following commands to troubleshoot more indepth --
 
 Big thanks to all the developers and contributors to SWGEmu, Core3, and Engine3.
 
+@Lyhtmyst
+@Phoenix
 @thmhoag for his original work to dockerize things -- https://github.com/thmhoag/swgemu-docker
-
 
 ## License
 
